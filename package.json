@@ -1,16 +1,25 @@
 {
   "name": "future-ai",
   "version": "1.0.0",
-  "description": "",
+  "description": "Static Future Tech landing page with responsive header.",
   "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "author": "Future AI Team",
+  "type": "module",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-watch": "sass --watch ." 
+    "dev": "sass --watch styles/main.scss:styles/main.css --style=expanded",
+    "build": "sass styles/main.scss:styles/main.css --style=compressed",
+    "lint:js": "eslint .",
+    "lint:styles": "stylelint \"styles/**/*.scss\"",
+    "lint": "npm run lint:js && npm run lint:styles",
+    "format": "prettier --write .",
+    "test": "node --test tests/**/*.test.js"
   },
   "devDependencies": {
-    "sass": "^1.80.6"
+    "eslint": "^9.39.0",
+    "prettier": "^3.6.2",
+    "sass": "^1.93.2",
+    "stylelint": "^16.25.0",
+    "stylelint-config-standard-scss": "^16.0.0"
   }
 }

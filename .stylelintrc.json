@@ -1,0 +1,20 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "ignoreFiles": ["styles/_normalize.scss"],
+  "rules": {
+    "selector-class-pattern": null,
+    "rule-empty-line-before": null,
+    "value-keyword-case": null,
+    "shorthand-property-no-redundant-values": null,
+    "custom-property-pattern": null,
+    "selector-not-notation": null,
+    "comment-empty-line-before": null,
+    "color-hex-length": null,
+    "custom-property-empty-line-before": null,
+    "scss/dollar-variable-pattern": null,
+    "scss/dollar-variable-empty-line-before": null,
+    "scss/at-rule-conditional-no-parentheses": null,
+    "at-rule-empty-line-before": null,
+    "property-no-deprecated": null
+  }
+}
